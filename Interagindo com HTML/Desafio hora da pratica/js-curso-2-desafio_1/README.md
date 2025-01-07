@@ -26,5 +26,6 @@ Ver opinião do instrutor
 Opinião do instrutor
 
 Para te ajudar a verificar seus códigos, está disponível uma possível resolução dos desafios neste link para você construir ou validar suas soluções.
+https://github.com/alura-cursos/js-curso-2/tree/desafio_1_respostas
 
 Boa sorte nos estudos!
