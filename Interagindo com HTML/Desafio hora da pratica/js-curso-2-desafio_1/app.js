@@ -8,3 +8,8 @@ function exibirMensagemNoConsole() {
 function exibirAlerta() {
     alert('Eu amo Js')
 }
+
+function exibirPrompt() {
+    let nomeDaCidade = prompt('Digite o nome de uma cidade do Brasil que você gosta muito:')
+    alert(`Estive em ${nomeDaCidade} e lembrei de você`)
+}
