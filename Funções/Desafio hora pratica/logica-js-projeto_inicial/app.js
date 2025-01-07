@@ -28,3 +28,10 @@ function exibirOla() {
   
   let maiorNumero = encontrarMaior(15, 9);
   console.log(maiorNumero);
+
+  function quadrado(numero) {
+    return numero * numero;
+  }
+  
+  let resultado = quadrado(2);
+  console.log(resultado); 
