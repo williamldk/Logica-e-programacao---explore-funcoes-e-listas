@@ -61,3 +61,15 @@ function calcularFatorial(numero) {
   let raio = 4; // em metros
   calcularAreaPerimetroSalaCircular(raio);
   
+  //função que mostra na tela a tabuada de um número dado como parâmetro.
+  function mostrarTabuada(numero) {
+    for (let i = 1; i <= 10; i++) {
+      let resultado = numero * i;
+      console.log(`${numero} x ${i} = ${resultado}`);
+    }
+  }
+  
+  // Exemplo de uso
+  //(Já tem numero definido)
+  // let numero = 7;
+  mostrarTabuada(numero);
