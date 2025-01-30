@@ -22,7 +22,7 @@ function calcularFatorial(numero) {
   let resultado = calcularFatorial(numero);
   console.log(`O fatorial de ${numero} é ${resultado}`);
 
-  //função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$ 4,80
+  //função que converta um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$ 4,80
   function converterDolarParaReal(valorEmDolar) {
     let cotacaoDolar = 4.80;
     let valorEmReais = valorEmDolar * cotacaoDolar;
@@ -34,7 +34,7 @@ function calcularFatorial(numero) {
   let valorEmReais = converterDolarParaReal(valorEmDolar);
   console.log(`${valorEmDolar} dólares equivalem a R$ ${valorEmReais}`);
 
-  //função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro
+  //função que mostra na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro
   function calcularAreaPerimetroSalaRetangular(altura, largura) {
     let area = altura * largura;
     let perimetro = 2 * (altura + largura);
@@ -47,4 +47,17 @@ function calcularFatorial(numero) {
   let altura = 3; // em metros
   let largura = 5; // em metros
   calcularAreaPerimetroSalaRetangular(altura, largura);
+
+  //função que mostra na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14
+  function calcularAreaPerimetroSalaCircular(raio) {
+    let area = Math.PI * raio * raio;
+    let perimetro = 2 * Math.PI * raio;
+    
+    console.log(`Área da sala circular: ${area.toFixed(2)} metros quadrados`);
+    console.log(`Perímetro da sala circular: ${perimetro.toFixed(2)} metros`);
+  }
+  
+  // Exemplo de uso
+  let raio = 4; // em metros
+  calcularAreaPerimetroSalaCircular(raio);
   
