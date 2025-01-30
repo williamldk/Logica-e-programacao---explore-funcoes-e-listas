@@ -9,9 +9,9 @@ function calcularFatorial(numero) {
       return 1;
     }
   
-    let fatorial = 1;
+    let fatorial = 1; // Isso acontece porque na multiplicação o número neutro é 1 (se fosse soma, o neutro seria 0).
     for (let i = 2; i <= numero; i++) {
-      fatorial *= i;
+      fatorial *= i; // Armazena o valor de "fatorial x i" na variavel "fatorial"
     }
   
     return fatorial;
@@ -26,7 +26,7 @@ function calcularFatorial(numero) {
   function converterDolarParaReal(valorEmDolar) {
     let cotacaoDolar = 4.80;
     let valorEmReais = valorEmDolar * cotacaoDolar;
-    return valorEmReais.toFixed(2);
+    return valorEmReais.toFixed(2); // o numero dentro de .toFixed(x) Ele define quantas casas decimais o número terá após a vírgula (ou ponto, no caso do JavaScript). Ex:  (1 = 2.0) (2 = 2.00) (3 = 2.000) 
   }
   
   // Exemplo de uso
@@ -63,8 +63,8 @@ function calcularFatorial(numero) {
   
   //função que mostra na tela a tabuada de um número dado como parâmetro.
   function mostrarTabuada(numero) {
-    for (let i = 1; i <= 10; i++) {
-      let resultado = numero * i;
+    for (let i = 1; i <= 10; i++) { //(i = 1 até 10; soma 1 a cada repetição)
+      let resultado = numero * i; //(i vai crescendo a cada repetição)
       console.log(`${numero} x ${i} = ${resultado}`);
     }
   }
